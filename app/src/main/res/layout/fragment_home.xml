@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".ui.home.HomeFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:id="@+id/LLHome1"
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:weightSum="5"
+           android:orientation="horizontal"
+           android:layout_marginTop="10dp"
+           app:layout_constraintTop_toTopOf="parent">
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:layout_weight="1"
+               android:background="@drawable/bg_input_white_caps"
+               android:drawableStart="@drawable/ic_baseline_search_24"
+               android:drawablePadding="8dp"
+               android:hint="Cari di sini.."
+               android:drawableTint="@color/colorPrimary"
+               android:paddingLeft="8dp"
+               android:shadowDy="-3"
+               android:shadowColor="@android:color/black"
+               android:shadowRadius="6dp"
+               android:shadowDx="3"/>
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="4"
+               android:src="@drawable/ic_baseline_notifications_24"
+               android:background="@android:color/transparent"
+               android:layout_gravity="center_vertical"
+               app:tint="@color/colorPrimary" />
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/LLHome2"
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:orientation="horizontal"
+           android:weightSum="3"
+           app:layout_constraintTop_toBottomOf="@id/LLHome1">
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:src="@drawable/food"
+               android:layout_weight="1"
+               android:background="@drawable/bg_input_white_caps"
+               android:paddingTop="16dp"
+               android:paddingBottom="16dp"/>
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:src="@drawable/soft_drink"
+               android:layout_weight="1"
+               android:background="@drawable/bg_input_white_caps"
+               android:paddingTop="16dp"
+               android:paddingBottom="16dp"/>
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:src="@drawable/cake"
+               android:layout_weight="1"
+               android:background="@drawable/bg_input_white_caps"
+               android:paddingTop="16dp"
+               android:paddingBottom="16dp"/>
+
+
+
+
+       </LinearLayout>
+
+       <TextView
+           android:id="@+id/tvProductHelp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@+id/LLHome2"
+           app:layout_constraintStart_toStartOf="parent"
+           android:text="Beranda"
+           android:textSize="16dp"
+           android:fontFamily="@font/poppins"/>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/rv_home"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           tools:listitem="@layout/adapter_home"
+           android:nestedScrollingEnabled="false"
+           app:layout_constraintTop_toBottomOf="@id/tvProductHelp"/>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</FrameLayout>
+
+<!--<div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+<!--<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+<!--<div>Icons made by <a href="https://www.flaticon.com/authors/wanicon" title="wanicon">wanicon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
