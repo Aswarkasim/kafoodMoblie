@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.NextStepActivity"
+    android:background="@android:color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imv_add_image_next_step"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_add_image"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"
+                android:fontFamily="@font/poppins"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/et_namalengkap_register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_outline_black"
+                android:fontFamily="@font/poppins"
+                android:hint="Nama Lengkap"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/et_email_register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_outline_black"
+                android:fontFamily="@font/poppins"
+                android:hint="email@email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Hp"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/et_nohp_register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_outline_black"
+                android:fontFamily="@font/poppins"
+                android:hint="No Hp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/et_alamat_register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_outline_black"
+                android:fontFamily="@font/poppins"
+                android:hint="Alamat"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posisi"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/et_posisi_register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_outline_black"
+                android:fontFamily="@font/poppins"
+                android:hint="Posisi"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" />
+
+            <Button
+                android:id="@+id/btn_submit_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_btn_yellow"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentBottom="true"/>
+
+        </LinearLayout>
+
+
+
+
+
+</ScrollView>

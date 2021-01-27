@@ -30,11 +30,7 @@
                android:drawablePadding="8dp"
                android:hint="Cari di sini.."
                android:drawableTint="@color/colorPrimary"
-               android:paddingLeft="8dp"
-               android:shadowDy="-3"
-               android:shadowColor="@android:color/black"
-               android:shadowRadius="6dp"
-               android:shadowDx="3"/>
+               android:paddingLeft="8dp"/>
 
            <ImageView
                android:layout_width="match_parent"
