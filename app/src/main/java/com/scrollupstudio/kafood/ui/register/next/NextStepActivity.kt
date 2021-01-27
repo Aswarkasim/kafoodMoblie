@@ -1,4 +1,4 @@
-package com.scrollupstudio.kafood.ui.register
+package com.scrollupstudio.kafood.ui.register.next
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
